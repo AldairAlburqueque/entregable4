@@ -1,0 +1,189 @@
+.app{
+    background-image: url('https://cdn.pixabay.com/photo/2015/01/07/16/37/wood-591631_960_720.jpg');
+    min-width: 100vw;  
+    min-height: 100vh;
+    margin: auto;
+    padding: 1em;
+}
+
+.app_form{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0003;
+    backdrop-filter: blur(2px);
+    transform: scale(0);
+    transition: transform 200ms ease;
+}
+.app_form-visible{
+    transform: scale(1);
+}
+.form{
+    padding: 1.2em;
+    width: 100%;
+    max-width: 350px;
+    background-color: white;
+    height: max-content;
+    border-radius: 0.7em;
+    position: relative;
+}
+.form_title{
+    font-size: 1.5em;
+    margin-bottom: 0.6em;
+}
+.form_x{
+    position: absolute;
+    right: 1.5em;
+    top: 1.2em;
+    font-size: 1.3rem;
+    color: red;
+    cursor: pointer;
+    transition: transform 100ms ease;
+}
+.form_x:hover{
+    transform: scale(1.2);
+}
+.form_iten{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    margin-bottom: 0.8em;
+}
+.form_label{
+    color: rgb(54, 53, 53);
+    padding-left: 1em;
+
+}
+.form_input{
+    padding: 0.4em 0.8em;
+}
+.form_btn{
+    width: 100%;
+    padding: 0.8em;
+    background-color: #555A88;
+    color: white;
+    cursor: pointer;
+}
+.app_btn-form{
+    width: 100px;
+    padding: 0.8em; 
+    background-color: #555a88;
+    color: white;
+}
+.app_btn-form:hover{
+    background-color: rgb(174, 69, 71);
+    color: rgba(26, 22, 22, 0.6);
+}
+.user_header{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 2em;
+    margin: 1em 3em;
+    min-width: 300px;
+    background-color: rgb(52, 49, 52);
+    color: white;
+    padding: 1em;
+    border-radius: 5px;
+    }
+.section{
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.card_user{
+    background-color: #aaa9;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 0.5em;
+    text-align: start;
+    gap: 0.3em;
+    border: 1px solid #aaa3;
+    text-align: start;
+}
+.card_name{
+    font-size: 1.3em;
+}
+.user_ul{
+    padding: 0;
+}
+.user_li{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    margin-bottom: 1em;
+    
+    text-align: start;
+}
+.user_span{
+    color: #fff; 
+    display: flex;
+    margin-bottom: 0.2em;
+    
+}
+.footer_card{
+    display: flex;
+    justify-content: end;
+    gap: 0.5em;
+}
+.footer_btn{
+    border-radius: 5px;
+    border: 0.1em solid #aaa3;
+}
+.footer_btn:hover{
+    background-color: #555A88;
+}
+.btn_delete{
+    background-color: rgb(228, 50, 53);
+}
+.btn_update{
+    background-color: #aaa7;
+}
+hr{
+    width: 100%;
+}
+.fal{
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: #fff9;
+}
+.fa-solid{
+    width: 30px;
+    color: black;
+}
+.material-symbols-outlined{
+
+    font-size: 1em;
+}
+
+
+.loading {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_loading {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    animation: animation 1.3s infinite;
+    border-top: inherit;
+}
+
+@keyframes animation {
+    0% {transform: rotate(0);}
+    100% {transform: rotate(360deg);}
+}
